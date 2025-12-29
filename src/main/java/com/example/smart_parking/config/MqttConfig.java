@@ -26,7 +26,6 @@ public class MqttConfig {
     @Value("${mqtt.password}")
     private String password;
 
-
     @Value("${mqtt.client.id}")
     private String clientId;
 
