@@ -1,10 +1,10 @@
 // WebSocket connection ke Spring Boot
-const ws = new WebSocket("ws://localhost:8080/ws/parking");
+const ws = new WebSocket("wss://smart-parking-production.up.railway.app/ws/parking");
 
 ws.onmessage = (event) => {
     const data = JSON.parse(event.data);
 
-    // Topic format: ged9/b1/a1
+    // Topic format: unpar/ged9/b1/a2
     const parts = data.topic.split("/");
 
     const gedung = parts[1];  // ged9 atau ppag
