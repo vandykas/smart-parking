@@ -7,9 +7,9 @@ ws.onmessage = (event) => {
     // Topic format: ged9/b1/a1
     const parts = data.topic.split("/");
 
-    const gedung = parts[0];  // ged9 atau ppag
-    const lantai = parts[1]; // b1 / b2 / b3
-    const slotKey = parts[2]; // a1, b2, c3
+    const gedung = parts[1];  // ged9 atau ppag
+    const lantai = parts[2]; // b1 / b2 / b3
+    const slotKey = parts[3]; // a1, b2, c3
 
     // Payload is the distance
     const distance = parseInt(data.mqtt, 10);
