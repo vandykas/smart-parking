@@ -79,6 +79,12 @@
             font-weight: bold;
             border: 2px solid #374151;
             color: #000;
+            background: #d1d5db;
+            /* Default Offline */
+        }
+
+        .parking-spot.offline {
+            background: #d1d5db;
         }
 
         .parking-spot.empty {
@@ -235,6 +241,10 @@
 
         .legend-box.empty {
             background: #86efac;
+        }
+
+        .legend-box.offline {
+            background: #d1d5db;
         }
 
         .controls {
