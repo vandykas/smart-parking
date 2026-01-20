@@ -189,6 +189,126 @@
             margin-bottom: 20px;
         }
 
+        /* Entry and Exit blocks */
+        .bottom-row-with-entry {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .bottom-row-with-exit {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .entry-exit-blocks {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .entry-block {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .entry-spot {
+            width: 48px;
+            height: 28px;
+            border-radius: 4px;
+            border: 2px solid #374151;
+            background: white;
+        }
+
+        .exit-block-inline {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .exit-block-left {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .exit-block-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .exit-spot {
+            width: 48px;
+            height: 28px;
+            border-radius: 4px;
+            border: 2px solid #374151;
+            background: white;
+        }
+
+        /* Striped parking area */
+        .striped-parking {
+            background-image: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(0, 0, 0, 0.03) 10px,
+                    rgba(0, 0, 0, 0.03) 20px);
+        }
+
+        .parking-spot.striped {
+            position: relative;
+        }
+
+        .parking-spot.striped::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 4px,
+                    rgba(0, 0, 0, 0.1) 4px,
+                    rgba(0, 0, 0, 0.1) 8px);
+            border-radius: 4px;
+            pointer-events: none;
+        }
+
+        .parking-spot.last-spot {
+            margin-left: 0;
+        }
+
+        /* Navigation boxes */
+        .navigation-boxes {
+            display: flex;
+            gap: 60px;
+            margin-top: 20px;
+            align-items: flex-start;
+        }
+
+        .nav-boxes-right {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .nav-box {
+            background: white;
+            border: 2px solid #374151;
+            border-radius: 6px;
+            padding: 16px 24px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+        }
+
         .bottom-controls {
             background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
             padding: 0;
