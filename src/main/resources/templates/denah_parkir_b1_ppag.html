@@ -64,6 +64,11 @@
                         <div class="label-spot" data-gedung="ppag" data-lantai="b1" data-slot="a20">A20</div>
                         <div class="label-spot" data-gedung="ppag" data-lantai="b1" data-slot="a21">A21</div>
                         <div class="label-spot" data-gedung="ppag" data-lantai="b1" data-slot="a22">A22</div>
+
+                        <!-- IN label between A22 and I1 -->
+                        <div class="sidebar-gap-with-label">
+                            <div class="entry-exit-label">IN</div>
+                        </div>
                     </div>
 
                     <div class="center-content">
@@ -166,9 +171,9 @@
                             <div class="label-spot offline" data-gedung="ppag" data-lantai="b1" data-slot="i3">I3</div>
                         </div>
 
-                        <!-- IN label in gap -->
+                        <!-- OUT label between I3 and J1 -->
                         <div class="sidebar-gap-with-label">
-                            <div class="entry-exit-label">IN</div>
+                            <div class="entry-exit-label">OUT</div>
                         </div>
 
                         <!-- J Series group (first part) -->
@@ -178,10 +183,7 @@
                             <div class="label-spot offline" data-gedung="ppag" data-lantai="b1" data-slot="j3">J3</div>
                         </div>
 
-                        <!-- OUT label in gap -->
-                        <div class="sidebar-gap-with-label">
-                            <div class="entry-exit-label">OUT</div>
-                        </div>
+                        <div class="sidebar-gap-small"></div>
 
                         <div class="sidebar-group">
                             <div class="label-spot offline" data-gedung="ppag" data-lantai="b1" data-slot="j4">J4</div>
@@ -233,6 +235,15 @@
                         </div>
 
                         <div class="bottom-large-row">
+                            <!-- Spacer to align G-row with D-row -->
+                            <div class="bottom-left">
+                                <div class="bottom-parking-group" style="visibility: hidden;">
+                                    <div class="parking-spot">C1</div>
+                                    <div class="parking-spot">C2</div>
+                                    <div class="parking-spot">C3</div>
+                                </div>
+                            </div>
+
                             <div class="parking-spot" data-gedung="ppag" data-lantai="b1" data-slot="g1">G1</div>
                             <div class="parking-spot" data-gedung="ppag" data-lantai="b1" data-slot="g2">G2</div>
                             <div class="parking-spot" data-gedung="ppag" data-lantai="b1" data-slot="g3">G3</div>
@@ -253,10 +264,10 @@
                             <div class="parking-spot" data-gedung="ppag" data-lantai="b1" data-slot="g18">G18</div>
 
                             <div class="vertical-capped-group">
-                                <div class="parking-spot horizontal offline" data-gedung="ppag" data-lantai="b1"
-                                    data-slot="g19">G19</div>
-                                <div class="parking-spot horizontal offline" data-gedung="ppag" data-lantai="b1"
-                                    data-slot="g20">G20</div>
+                                <div class="parking-spot offline" data-gedung="ppag" data-lantai="b1" data-slot="g19">
+                                    G19</div>
+                                <div class="parking-spot offline" data-gedung="ppag" data-lantai="b1" data-slot="g20">
+                                    G20</div>
                             </div>
                         </div>
 

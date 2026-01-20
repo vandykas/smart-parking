@@ -322,7 +322,42 @@
             font-size: 14px;
             font-weight: bold;
             color: #000;
+            position: relative;
+            overflow: hidden;
+        }
 
+        /* Right arrow pattern for Down to B3 (first nav-box) */
+        .nav-box:first-child::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 20 L20 15 L20 25 Z' fill='rgba(0,0,0,0.08)'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Left arrow pattern for Up to B1 (last nav-box) */
+        .nav-box:last-child::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 20 L20 15 L20 25 Z' fill='rgba(0,0,0,0.08)'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Ensure text is above the pattern */
+        .nav-box {
+            position: relative;
+            z-index: 1;
         }
 
         .bottom-controls {
