@@ -4,6 +4,9 @@ const parkingData = {
     ged9: {}
 };
 
+updateDisplay("ged9");
+updateDisplay("ppag");
+
 ws.onmessage = (event) => {
     try {
         const data = JSON.parse(event.data);
