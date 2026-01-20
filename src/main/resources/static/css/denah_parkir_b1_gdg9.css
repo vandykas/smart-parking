@@ -100,13 +100,19 @@
             gap: 6px;
             margin-bottom: 20px;
             justify-content: flex-start;
-            border-bottom: 3px solid #000;
-            padding-bottom: 15px;
+        }
+
+        /* Horizontal lines */
+        .horizontal-line {
+            width: 100%;
+            height: 3px;
+            background: #000;
+            margin: 15px 0;
         }
 
         /* IN label styling */
         .entry-label-container {
-            margin: 15px 0 20px 0;
+            margin: 15px 0;
             text-align: left;
             padding-left: 10px;
         }
@@ -118,14 +124,28 @@
             letter-spacing: 1px;
         }
 
-        .middle-section {
-            display: flex;
-            gap: 6px;
-            margin-bottom: 80px;
-            justify-content: flex-start;
+        /* Main Parking Area - Combined box */
+        .main-parking-area {
             border: 3px solid #000;
             border-radius: 8px;
             padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .parking-row {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 30px;
+            justify-content: flex-start;
+        }
+
+        .parking-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .parking-group {
+            display: flex;
+            gap: 6px;
         }
 
         /* OUT label styling */
@@ -140,6 +160,14 @@
             font-weight: bold;
             color: #000;
             letter-spacing: 1px;
+        }
+
+        /* K Series - Bottom Right */
+        .k-series-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+            padding-right: 20px;
         }
 
         .middle-row {
@@ -157,26 +185,6 @@
 
         .spacer-large {
             width: 160px;
-        }
-
-        .bottom-section {
-            margin-bottom: 40px;
-            border: 3px solid #000;
-            border-radius: 8px;
-            padding: 20px;
-        }
-
-        .bottom-row-1 {
-            display: flex;
-            gap: 6px;
-            margin-bottom: 40px;
-            align-items: flex-start;
-        }
-
-        .bottom-row-2 {
-            display: flex;
-            gap: 6px;
-            align-items: flex-start;
         }
 
         .bottom-controls {
