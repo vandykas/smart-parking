@@ -4,8 +4,9 @@ const parkingData = {
     ged9: {}
 };
 
-updateDisplay("ged9");
-updateDisplay("ppag");
+Object.keys(parkingData).forEach(key => {
+    updateDisplay(key);
+});
 
 ws.onmessage = (event) => {
     try {
