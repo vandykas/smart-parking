@@ -98,8 +98,24 @@
         .top-section {
             display: flex;
             gap: 6px;
-            margin-bottom: 150px;
+            margin-bottom: 20px;
             justify-content: flex-start;
+            border-bottom: 3px solid #000;
+            padding-bottom: 15px;
+        }
+
+        /* IN label styling */
+        .entry-label-container {
+            margin: 15px 0 20px 0;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .entry-label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            letter-spacing: 1px;
         }
 
         .middle-section {
@@ -107,6 +123,23 @@
             gap: 6px;
             margin-bottom: 80px;
             justify-content: flex-start;
+            border: 3px solid #000;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        /* OUT label styling */
+        .exit-label-container {
+            margin: 20px 0;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .exit-label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            letter-spacing: 1px;
         }
 
         .middle-row {
@@ -128,6 +161,9 @@
 
         .bottom-section {
             margin-bottom: 40px;
+            border: 3px solid #000;
+            border-radius: 8px;
+            padding: 20px;
         }
 
         .bottom-row-1 {
