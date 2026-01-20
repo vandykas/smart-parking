@@ -189,65 +189,56 @@
             margin-bottom: 20px;
         }
 
-        /* Entry and Exit blocks */
-        .bottom-row-with-entry {
+        /* Bottom Layout Wrapper */
+        .bottom-container-wrapper {
             display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            align-items: flex-start;
+            gap: 24px;
+            margin-top: 40px;
+            justify-content: center;
         }
 
-        .bottom-row-with-exit {
+        /* Left Sidebar */
+        .bottom-sidebar {
             display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            align-items: flex-start;
+            flex-direction: column;
         }
 
-        .entry-exit-blocks {
+        .sidebar-group {
             display: flex;
             flex-direction: column;
             gap: 4px;
+            align-items: flex-end;
+            /* Align boxes to the right side of the sidebar column */
         }
 
-        .entry-block {
+        .sidebar-gap {
+            height: 20px;
+        }
+
+        .sidebar-gap-medium {
+            height: 32px;
+        }
+
+        .sidebar-gap-small {
+            height: 12px;
+        }
+
+        .sidebar-gap-large {
+            height: 36px;
+        }
+
+        /* Vertical Capped Group for G19-G20 */
+        .vertical-capped-group {
             display: flex;
             flex-direction: column;
             gap: 4px;
+            margin-left: 4px;
         }
 
-        .entry-spot {
-            width: 48px;
-            height: 28px;
-            border-radius: 4px;
-            border: 2px solid #374151;
-            background: white;
-        }
-
-        .exit-block-inline {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        .exit-block-left {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        .exit-block-bottom {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        .exit-spot {
-            width: 48px;
-            height: 28px;
-            border-radius: 4px;
-            border: 2px solid #374151;
-            background: white;
+        /* Ensure horizontal spots inside vertical group act correctly */
+        .vertical-capped-group .parking-spot.horizontal {
+            width: 64px;
+            height: 32px;
         }
 
         /* Striped parking area */
