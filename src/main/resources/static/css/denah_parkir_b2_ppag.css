@@ -227,6 +227,22 @@
             height: 36px;
         }
 
+        /* IN/OUT Label Styling */
+        .sidebar-label-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .entry-exit-label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #dc2626;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            letter-spacing: -2px;
+        }
+
         /* Vertical Capped Group for G19-G20 */
         .vertical-capped-group {
             display: flex;
